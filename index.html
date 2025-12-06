@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="Stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Bài kiểm tra số 2 - CSS Display và flexbox</title>
+  </head>
+  <!-- TODO
+  1) Thêm hình ảnh vào webpage
+  2) Viết css cho wbpage vào file style.css và nhúng vào webpage:
+    + Chiều rộng phần nội dung (wrapper) tối đa là 1024px; lấy màu nên trong hình kết quả.
+    + tiêu đề h1 của trang có kích thước x2.5 root và viết hoa
+    + Sử dụng font Pacifico cho các tiêu đề h1,h2,h3 
+    https://fonts.google.com/specimen/Pacifico 
+    + phần header có tổng chiều cao tối đa (kể cả menu navbar) là 350px
+    + Phần sidebar chiếm 35% phần nội dung và nằm bên phải
+  3) Màu của webpage: sử dụng công cụ lấy màu để lấy màu đúng với hình kết quả goal.png
+  -->
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="site-info">
+          <h1>Môn học Thiết kế web</h1>
+          <p>Bài kiểm tra layout</p>
+          <p>Sử dụng <b>Flex box</b></p>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Khoa học</a></li>
+            <li><a href="#">Công nghệ</a></li>
+            <li><a href="#">Cuộc sống</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main">
+        <aside class="sidebar">
+          <section>
+            <h2>Giới thiệu</h2>
+            <img src="images/gioithieu.png" alt="" />
+            <p>
+              Sidebar là gì? Bạn thường nghe về sidebar nhưng có thực sự biết,
+              hiểu và dùng nó hiệu quả.
+            </p>
+          </section>
+          <section>
+            <h3>Nổi bật</h3>
+            <img src="images/noi-bat.png" alt="" />
+            <img src="images/noi-bat.png" alt="" />
+            <img src="images/noi-bat.png" alt="" />
+          </section>
+          <section>
+            <h3>Follow Me</h3>
+            <img white src="./images/facebook.svg" alt="" />
+            <img src="./images/youtube.svg" alt="" />
+          </section>
+        </aside>
+        <div class="main-content">
+          <article>
+            <h2>Attribute Selector trong CSS</h2>
+            <h5>Đăng bởi admin, 15/04/2019</h5>
+            <img src="images/article.png" alt="" />
+            <p>
+              Attribute selector là cách chọn các phần tử bạn muốn định kiểu
+              trong tài liệu HTML dựa vào thuộc tính của một hay nhiều thẻ HTML
+              nào đó.
+            </p>
+            <p>
+              Attribute selector có thể chọn được các đối tượng mà không cần
+              phải khai báo thêm các Class hoặc ID vào trong thẻ HTML và vẫn có
+              thể hướng được đến các thành phần đó, giúp code gọn gàng hơn và
+              mạch lạc hơn.
+            </p>
+            <p>
+              Attribute selector có thể chọn được các đối tượng mà không cần
+              phải khai báo thêm các Class hoặc ID vào trong thẻ HTML và vẫn có
+              thể hướng được đến các thành phần đó, giúp code gọn gàng hơn và
+              mạch lạc hơn.
+            </p>
+          </article>
+          <article>
+            <hr class="dash-style">
+            <h2>Form - Biểu mẫu trong CSS</h2>
+            <h5>Đăng bởi admin, 14/02/2019</h5>
+            <img src="images/article.png" alt="">
+            <p>
+              Form CSS là gì? Nếu đã dùng CSS thẻ input thành thạo, giờ là lúc
+              bạn nên học cách tạo biểu mẫu.
+            </p>
+            <p>
+              Biểu mẫu web là thành phần phổ biến trong mọi thiết kế trang web.
+              Nó xuất hiện dưới mọi hình thức, từ một trường biểu mẫu tìm kiếm
+              tới biểu mẫu liên hệ và bộ lọc dữ liệu phức tạp. Biết cách dùng
+              CSS để tạo kiểu và làm việc với những nhân tố này, bạn sẽ có các
+              giải pháp tốt hơn cho những vấn đề thường gặp trong khi lập trình
+              hàng ngày, và có thể cải thiện trải nghiệm người dùng cho web của
+              bạn.
+            </p>
+            <p>
+              Biểu mẫu web là thành phần phổ biến trong mọi thiết kế trang web.
+              Nó xuất hiện dưới mọi hình thức, từ một trường biểu mẫu tìm kiếm
+              tới biểu mẫu liên hệ và bộ lọc dữ liệu phức tạp. Biết cách dùng
+              CSS để tạo kiểu và làm việc với những nhân tố này, bạn sẽ có các
+              giải pháp tốt hơn cho những vấn đề thường gặp trong khi lập trình
+              hàng ngày, và có thể cải thiện trải nghiệm người dùng cho web của
+              bạn.
+            </p>
+            
+          </article>
+          <hr class="dash-style">
+        </div>
+      </div>
+      <footer>
+        <div class="col-md-12"><hr></div>
+        <p>© 2024 Trường Cao đẳng Công nghiệp Huế. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
