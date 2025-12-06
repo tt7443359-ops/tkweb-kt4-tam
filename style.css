@@ -9,7 +9,7 @@
     --color-6:#ECB259;
 }
 h1, h2, h3 {
-    font-family: 'gstaticgstatic', sans-serif;
+    font-family: "Pacifico", cursive;
 }
 body {
     line-height: 1.6;
@@ -154,7 +154,9 @@ footer {
     background-color: var(--color-6);
 }
 .main-content p{
-    font-weight: 600;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px; 
+    line-height: 1.6;
 }
 
 .main-content{
@@ -174,4 +176,9 @@ footer {
   height: 1px;
   border-top: 2px dashed #ff8c00;
   margin: 20px 0;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #f0e68c;
+  font-weight: bold;
 }
